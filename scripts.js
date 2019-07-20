@@ -18,22 +18,41 @@ const rmRow = document.querySelector('#rmRow');
 const addCol = document.querySelector('#addCol');
 const rmCol = document.querySelector('#rmCol');
 
-addRow.addEventListener('click', (ev) => {
+addRow.addEventListener('click', () => {
     rowNo += 1;
     grid.push(new Array(colNo).fill(''));
     renderGrid();
 })
 
 rmRow.addEventListener('click', () => {
-    renderGrid();
+    
+    if(rowNo > 1){
+        rowNo -= 1;
+        grid.pop();
+        renderGrid();
+    } else {
+        alert ("At least one row is required")
+    }
+    
 })
 
 addCol.addEventListener('click', () => {
+    colNo += 1;
+    grid.map(row =>  row.push(new Array(colNo).fill('')));
     renderGrid();
+
 })
 
 rmCol.addEventListener('click', () => {
-    renderGrid();
+    
+    if(colNo >1){
+        colNo -= 1;
+        grid.map(row => row.pop());
+        renderGrid();
+    } else {
+        alert("At least one column is required")
+    }
+    
 })
 
 /* colors */

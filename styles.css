@@ -10,10 +10,32 @@
 
 #mainBox {
     display: flex;
+    border: solid 1px gray;
+    font-family: monaco;
+    /* padding: 10px; */
 }
+
+.action {
+    background-color: white;
+    border: solid 1px gray;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
 
 #mainBox > div {
     flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    /* margin: 10px; */
+}
+
+#controls {
+    background: whitesmoke;
 }
 
 #grid {
@@ -38,6 +60,7 @@
     flex: 1;
     border: solid 1px black;
 }
+
 
 .fireBrick {
     background: firebrick;
