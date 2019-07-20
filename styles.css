@@ -1,3 +1,44 @@
+#colors {
+    display: flex;
+    align-items: center;
+}
+
+#colors div{
+    height: 15px;
+    width: 15px;
+}
+
+#mainBox {
+    display: flex;
+}
+
+#mainBox > div {
+    flex: 1;
+}
+
+#grid {
+    width: 90%;
+    height: 70%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.selected {
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.cell {
+    flex: 1;
+    border: solid 1px black;
+}
+
 .fireBrick {
     background: firebrick;
 }
@@ -16,9 +57,4 @@
 
 .teal {
     background: teal;
-}
-
-#colors div{
-    height: 15px;
-    width: 15px;
 }
