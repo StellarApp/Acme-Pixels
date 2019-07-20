@@ -1,0 +1,24 @@
+.fireBrick {
+    background: firebrick;
+}
+
+.salmon {
+    background: salmon;
+}
+
+.gold {
+    background: gold    ;
+}
+
+.springGreen {
+    background: springgreen;
+}
+
+.teal {
+    background: teal;
+}
+
+#colors div{
+    height: 15px;
+    width: 15px;
+}

@@ -1,16 +1,14 @@
-<html>
-    <head>
-    <meta charset="utf-8"></meta>
-    </head>
-    <body>
+let rowNo = 3;
+let colNo = 3;
 
-    </body>
-</html>
-<script>
-    let rowNo = 3;
-    let colNo = 3;
-    const grid =[];
+let grid = (new Array(rowNo)).fill(new Array(colNo).fill(" "));
 
+// console.log(grid)
 
+const canvas = document.querySelector("#grid");
 
-</script>
+const renderGrid = () => {
+    const render = ''
+    canvas.innerHTML = renderGrid;
+    return '<div></div>'
+}
